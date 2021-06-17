@@ -1,0 +1,20 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "dbadmin",
+  "password": "db1234",
+  "database": "dbstream",
+  "schema": "tatakae",
+  "logging": false,
+  "migrations": [
+    "./src/migrations/**.js"
+  ],
+  "entities": [
+    "./src/entities/**.js"
+  ],
+  "cli": {
+    "entitiesDir": "src/entities/",
+    "migrationsDir": "src/migrations/"
+  }
+}

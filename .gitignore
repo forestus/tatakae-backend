@@ -1,0 +1,12 @@
+.vscode/
+node_modules/
+dist/
+*.torrent
+*.yml
+*.mkv
+*.mp4
+.env
+.prettierrc
+.babelrc
+# exclude everything
+db/pgdata/*
