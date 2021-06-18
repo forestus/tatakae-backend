@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && node ./dist/server.js",
+    "start": "node ./dist/server.js",
     "build": "babel src --extensions \".js,.ts\" -d dist --copy-files --no-copy-ignored",
-    "heroku-postbuild": "npm install && npm run build",
+    "heroku-postbuild": "npm run build",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn -T -I node_modules  src/server.ts",
     "prettier": "npx prettier --write ."
   },
