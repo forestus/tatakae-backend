@@ -5,7 +5,6 @@ dist/
 *.yml
 *.mkv
 *.mp4
-.env
 .prettierrc
 .babelrc
 # exclude everything
