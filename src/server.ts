@@ -5,7 +5,6 @@ import express, { NextFunction, Request, Response } from 'express';
 import { router } from '@routes/routes';
 import { AppError } from '@errors/AppError';
 import helmet from 'helmet';
-
 dotenv.config();
 const app = express();
 app.use(cors());

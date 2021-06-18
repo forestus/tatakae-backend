@@ -4,16 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm install --production && node ./dist/server.js --env=production",
+    "start": "npm install --production && node ./dist/server.js",
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn -T -I node_modules  src/server.ts",
-    "prettier": "npx prettier --write .",
-    "typeorm": "ts-node --files -r tsconfig-paths/register ./node_modules/typeorm/cli.js --config ./ormconfig.json",
-    "typeorm:prod": "ts-node --files -r tsconfig-paths/register ./node_modules/typeorm/cli.js --config ./dist/ormconfig.js",
-    "migration:run": "npm run typeorm migration:run",
-    "migration:create": "npm run typeorm migration:create -- -n ",
-    "migration:generate": "npm run typeorm migration:generate -- -n ",
-    "schema-sync": "npm run typeorm schema:sync"
+    "prettier": "npx prettier --write ."
   },
   "devDependencies": {
     "@babel/cli": "^7.14.5",
